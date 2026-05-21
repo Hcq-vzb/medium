@@ -1,0 +1,179 @@
+@charset "utf-8";
+/**
+ * Product category sidebar: fix long EN labels (wrap, no overlap).
+ * Scoped to #index .class_bx and #neiye .nva_box only.
+ */
+
+/* Only show subcategories when parent Featured Products is expanded (h3.on) */
+#neiye .content .left_box .nva_box h3.off + ul.sub_bx {
+  display: none !important;
+}
+
+#neiye .content .left_box .nva_box h3.on + ul.sub_bx {
+  display: block !important;
+}
+
+/* Homepage product range sidebar */
+#index .products .cp_cont .class_bx ul li {
+  height: auto !important;
+  min-height: 50px !important;
+  line-height: 1.35 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-right: 28px !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  box-sizing: border-box !important;
+}
+
+#index .products .cp_cont .class_bx ul li a {
+  display: block !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+#index .products .cp_cont .class_bx ul li::after {
+  top: 50% !important;
+  margin-top: -4px !important;
+}
+
+/* Inner product pages left nav */
+#neiye .content .left_box .nva_box {
+  width: 220px !important;
+  overflow: visible !important;
+}
+
+#neiye .content .left_box .nva_box h3 {
+  height: auto !important;
+  min-height: 45px !important;
+  line-height: 1.35 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+#neiye .content .left_box .nva_box h3 a {
+  display: block !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  box-sizing: border-box !important;
+}
+
+#neiye .content .left_box .nva_box h3.off a {
+  padding-right: 22px !important;
+}
+
+#neiye .content .left_box .nva_box h3.on a {
+  padding-right: 22px !important;
+}
+
+#neiye .content .left_box .nva_box h3.off::after,
+#neiye .content .left_box .nva_box h3.on::after {
+  top: 50% !important;
+  margin-top: -4px !important;
+}
+
+#neiye .content .left_box .nva_box li.subclass {
+  height: auto !important;
+  min-height: 28px !important;
+  line-height: 1.35 !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  padding-right: 10px !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+#neiye .content .left_box .nva_box li.subclass a {
+  display: block !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Arabic RTL: keep arrow on the correct side */
+html[dir="rtl"] #index .products .cp_cont .class_bx ul li {
+  padding-right: 64px !important;
+  padding-left: 28px !important;
+}
+
+html[dir="rtl"] #index .products .cp_cont .class_bx ul li::after {
+  right: auto !important;
+  left: 18px !important;
+}
+
+html[dir="rtl"] #neiye .content .left_box .nva_box h3.off::after,
+html[dir="rtl"] #neiye .content .left_box .nva_box h3.on::after {
+  right: auto !important;
+  left: 12px !important;
+}
+
+html[dir="rtl"] #neiye .content .left_box .nva_box h3.off a,
+html[dir="rtl"] #neiye .content .left_box .nva_box h3.on a {
+  padding-right: 0 !important;
+  padding-left: 22px !important;
+  text-align: right !important;
+}
+
+html[dir="rtl"] #neiye .content .left_box .nva_box li.subclass {
+  padding-left: 35px !important;
+  padding-right: 10px !important;
+  text-align: right !important;
+}
+
+/* Product card images: mask embedded corner logo watermark */
+#neiye .content .right_box .cp_box_one .img {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+#neiye .content .right_box .cp_box_one .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#neiye .content .right_box .cp_box_one .img::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  height: 52px;
+  background: linear-gradient(135deg, transparent 20%, #f5f5f5 45%, #fff 70%);
+  pointer-events: none;
+}
+
+/* Footer #remen: prevent long link text overlapping next row (fixed 32px li height) */
+#remen .w1000 ul li {
+  height: auto !important;
+  min-height: 32px !important;
+  line-height: 24px !important;
+  overflow: hidden !important;
+  margin-bottom: 2px !important;
+}
+
+#remen .w1000 ul li a {
+  display: block !important;
+  line-height: 24px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  max-width: 100% !important;
+}
+
+html[dir="rtl"] #remen .w1000 ul li a {
+  direction: rtl;
+  text-align: right;
+}

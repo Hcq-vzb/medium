@@ -1,0 +1,416 @@
+{
+  "summary": {
+    "totalHtml": 523,
+    "scannedPages": 516,
+    "issueCount": 80,
+    "noLangJs": 0,
+    "noEarlyDir": 0,
+    "noCoreAr": 0,
+    "hasChinese": 0,
+    "hasGarbled": 0,
+    "missingDictCount": 727,
+    "dictKeyCount": 2834
+  },
+  "issues": [
+    {
+      "file": "jishuzhichi/zxxz/index.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: Downloads - PET Juice, Carbonated Drinks, 5-Gallon Barrel Water, KIWL Machinery — Filling & Packaging Equipment Dedicate…"
+    },
+    {
+      "file": "product/tuijianchanpin/13.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Featured Products Beverage Fully Automatic Filli…"
+    },
+    {
+      "file": "news/2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: News - PET Juice, Carbonated Drinks, 5-Gallon Barrel Water, KIWL Machinery — Filling & Packaging Equipment Dedicated to …"
+    },
+    {
+      "file": "product/tiebiaoji/index.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Labeling Machine > Labeling Machine 1 , 5-10 2 Suitable for both squ…"
+    },
+    {
+      "file": "2019/conews_0401/274.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: produces Monoblock Filling Machine, glass bottle Filling Machine, Large Bottle Water Filling Machine ,Purified Water Mon…"
+    },
+    {
+      "file": "2019/conews_0413/283.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: produces Monoblock Filling Machine, glass bottle Filling Machine, large bottle Water Filling Machine,Purified Water Mono…"
+    },
+    {
+      "file": "2019/conews_0408/278.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: produces Monoblock Filling Machine , glass bottle Filling Machine, large bottle Water Filling Machine,Purified Water Mon…"
+    },
+    {
+      "file": "2019/conews_0410/280.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: produces Monoblock Filling Machine, Glass Bottle Filling Machine , large bottle Water Filling Machine,Purified Water Mon…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1024/199.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "2017/dapinshui_0926/119.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Large Bottle Water Filling Machine > Product Det…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1008/173.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "product/13.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Products Beverage Fully Automatic Filling Machine Beverage Fully Aut…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1024/202.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Carbo…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/124.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Juice…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/123.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "2019/conews_0505/299.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: produces Monoblock Filling Machine, Glass Bottle Filling Machine , large bottle Water Filling Machine,Purified Water Mon…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/122.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details 18Bev…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/125.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/126.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "2018/hynews_0109/170.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: &nbsp; , Purified Water Monoblock Filling Machineenterprise technology equipment, production equipment, enterprise techn…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1024/200.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Filli…"
+    },
+    {
+      "file": "2019/spzx_0925/28.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article 15000bottles per hourJuice Bevera…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1024/201.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Juice…"
+    },
+    {
+      "file": "2018/spzx_0515/27.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article 30000cans per hourCarbonated Beve…"
+    },
+    {
+      "file": "2018/yilaguanyinliao_1217/253.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details Bever…"
+    },
+    {
+      "file": "2017/yilaguanyinliao_0926/121.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Product Details 12Bev…"
+    },
+    {
+      "file": "2018/spzx_0515/26.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article EthiopiaBlow-Fill-Cap Monoblock 1…"
+    },
+    {
+      "file": "kehuanli/kehuheying/2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Customer Photos Customer Photos Customer P…"
+    },
+    {
+      "file": "2017/5jialundatongshui_0926/113.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > 5-Gallon Barrel Water Filling Machine > Product …"
+    },
+    {
+      "file": "2018/spzx_0515/22.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article customer Shrink Wrapping Machine …"
+    },
+    {
+      "file": "2017/guozhiguanzhuangji_0926/134.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: products Rinsing Filling Capping Output500ml(bph) type (L) RCGF 14-12-4 14 12 4 1500-2000bph 0.25-2L RCGF 16-16-5 16 16 …"
+    },
+    {
+      "file": "index.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: PET Juice & Carbonated Drink Monoblock Lines | 5-Gallon Water Filler | KIWL Machinery Dedicated to ideal filling and bev…"
+    },
+    {
+      "file": "kehuanli/2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Case Studies Customer Photos Customer Photos Customer Photos…"
+    },
+    {
+      "file": "2018/spzx_0515/21.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article customer Packaging Machine - 4000…"
+    },
+    {
+      "file": "2019/tiebiaoji_1025/276.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Labeling Machine > Product Details Labeling Machine (, T) Updated: 2…"
+    },
+    {
+      "file": "2020/qing-jie-ji-guan-zhaung-ji_1016/281.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Filling Machine > Product Details Filling Machin…"
+    },
+    {
+      "file": "kehuanli/kehuheying/index-2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Customer Photos Customer Photos Customer P…"
+    },
+    {
+      "file": "2018/spzx_0515/23.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article customer - 4000bottles per hour 5…"
+    },
+    {
+      "file": "product/tuijianchanpin/yilaguanyinliao/2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Beverage Filling Machine > Beverage Filling Mach…"
+    },
+    {
+      "file": "2019/tiebiaoji_1025/277.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Labeling Machine > Product Details Labeling Machine (,) Updated: 201…"
+    },
+    {
+      "file": "2020/xi-shou-ye-guan-zhuang-ji_1016/282.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Filling Machine > Product Details Filling Machin…"
+    },
+    {
+      "file": "2020/xiao-du-ji-guan-zhuang-ji_1016/283.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Featured Products > Filling Machine > Product Details Filling Machin…"
+    },
+    {
+      "file": "2018/spzx_0515/20.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article customer production Labeling Mach…"
+    },
+    {
+      "file": "2019/spzx_1028/29.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article 20000bottles per hourCarbonated B…"
+    },
+    {
+      "file": "2017/kehuheying_0926/13.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article 2017Canton Fair4.15-19 Pos…"
+    },
+    {
+      "file": "2018/spzx_0515/25.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article Self-Adhesive Dual-Side Labeler P…"
+    },
+    {
+      "file": "2019/xipingji_1025/279.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Bottle Rinsing Machine > Product Details Bottle Rinsing Machine Upda…"
+    },
+    {
+      "file": "2019/fegnmiguanzhuangji_1025/278.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Honey Filling Machine > Product Details Honey Filling Machine Update…"
+    },
+    {
+      "file": "kehuanli/index-2.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Case Studies Customer Photos Customer Photos Customer Photos…"
+    },
+    {
+      "file": "2019/conews_0430/298.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Company News > Article Article Monoblock Filling Machine Posted: …"
+    },
+    {
+      "file": "2019/cuogaiji_1025/275.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Cap Twisting Machine > Product Details Cap Twisting Machine Updated:…"
+    },
+    {
+      "file": "2017/kehuheying_0926/12.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article 2017Philippines3.22-24 Pos…"
+    },
+    {
+      "file": "2018/spzx_0515/24.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article 60！United KingdomFilling Posted: …"
+    },
+    {
+      "file": "2018/spzx_0515/19.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Video Gallery You are here: Home > Support > Video Center > Article Article Juice Labeling Machine Posted: Ju…"
+    },
+    {
+      "file": "2017/kehuheying_0926/10.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Pakistan Expo 2017 Posted:…"
+    },
+    {
+      "file": "2017/kehuheying_0926/9.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Ethiopia Expo Apr 29–May 2…"
+    },
+    {
+      "file": "2017/kehuheying_0926/11.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Dubai Expo Mar 7–9, 2017 P…"
+    },
+    {
+      "file": "2019/conews_0415/284.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Company News > Article Article 5-Gallon Barrel Water Filling Mach…"
+    },
+    {
+      "file": "2019/zhenkongxuangaiji_1025/280.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Products You are here: Home > Products > Capping > Product Details Capping Updated: 2019-10-25 15:05:22 Categ…"
+    },
+    {
+      "file": "2018/hynews_0109/169.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Industry News > Article Article Purified Water Monoblock Filling …"
+    },
+    {
+      "file": "2019/hynews_0126/243.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Industry News > Article Article Glass Bottle Filling Machinemanuf…"
+    },
+    {
+      "file": "2026/hynews_0331/328.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Industry News > Article Article Fully Automatic Filling Productio…"
+    },
+    {
+      "file": "kehuanli/3.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Case Studies 2016PPP 2016 ChinaCanton Fair West Africa Packa…"
+    },
+    {
+      "file": "2017/kehuheying_0926/14.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2019/conews_0505/299.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Company News > Article Article KIWLglass bottle filling machine P…"
+    },
+    {
+      "file": "2019/cuogaiji_1025/275.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: Jiangsu Xin Zijing Machinery Manufacturing Group Co., Ltd. produces monoblock filling machines and , glass bottle Fillin…"
+    },
+    {
+      "file": "2019/conews_0410/280.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Company News > Article Article KIWL Glass Bottle Filling Machine …"
+    },
+    {
+      "file": "2019/conews_0531/323.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 News & Insights You are here: Home > News > Company News > Article Article purified water monoblock filling m…"
+    },
+    {
+      "file": "kehuanli/kehuheying/3.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Customer Photos 2016PPP 2016 ChinaCanton F…"
+    },
+    {
+      "file": "2017/kehuheying_0926/15.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/16.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/17.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/18.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/19.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/20.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/21.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/22.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/23.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/24.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    },
+    {
+      "file": "2017/kehuheying_0926/25.html",
+      "type": "missing-ar-translation",
+      "detail": "词典未覆盖英文: 2019-05-07 Case Studies You are here: Home > Case Studies > Customer Photos > Article Article Customer Photos Posted: Cu…"
+    }
+  ]
+}

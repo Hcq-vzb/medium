@@ -1,0 +1,172 @@
+@charset "utf-8";
+/**
+ * 全站轻量交互增强（仅过渡与 hover，不改变布局与配色框架）
+ */
+
+/* ---------- 平滑滚动 ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- 滚动时顶栏轻微强化 ---------- */
+#header.kiwl-scrolled .top_bx {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+#header.kiwl-scrolled .link_nav {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- 主导航 hover / 点击反馈 ---------- */
+#header .link_nav ul li {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#header .link_nav ul li a {
+  display: block;
+  position: relative;
+  transition: color 0.25s ease, background-color 0.25s ease, opacity 0.2s ease;
+}
+
+#header .link_nav ul li:not(.cur) a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+  pointer-events: none;
+}
+
+#header .link_nav ul li:not(.cur):hover a::after {
+  width: 55%;
+}
+
+#header .link_nav ul li a:active {
+  opacity: 0.85;
+}
+
+#header .link_nav ul li:active {
+  transform: scale(0.98);
+}
+
+/* ---------- 按钮类链接 ---------- */
+a.more,
+#index .youshi .cont .tit_bt a.more,
+#neiye .content .right_box .cont_box .next_page a.fanhui,
+#neiye .content .right_box .cont_box .pages a,
+input[type="submit"],
+input[type="button"],
+button,
+.kstd_bx a,
+#footer .mid_nav a {
+  transition: transform 0.2s ease, filter 0.25s ease, background-color 0.25s ease, color 0.25s ease, opacity 0.2s ease;
+}
+
+a.more:hover,
+#index .youshi .cont .tit_bt a.more:hover,
+#neiye .content .right_box .cont_box .next_page a.fanhui:hover,
+#neiye .content .right_box .cont_box .pages a:hover {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+
+a.more:active,
+#index .youshi .cont .tit_bt a.more:active,
+#neiye .content .right_box .cont_box .next_page a.fanhui:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active {
+  transform: scale(0.97);
+}
+
+/* ---------- 产品 / 新闻 / 案例卡片 ---------- */
+#index .about .cont .info_bx ul li,
+#index .products .cp_cont .cp_bx ul li,
+#index .video .cont ul li,
+#index .anli .cont_b1 ul li,
+#index .news .cont ul .hot,
+#index .news .cont ul li:not(.hot),
+#neiye .content .right_box .cont_box .product ul li,
+#neiye .content .right_box .cont_box .video ul li,
+#neiye .content .right_box .cont_box .news ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#index .about .cont .info_bx ul li:hover,
+#index .products .cp_cont .cp_bx ul li:hover,
+#index .video .cont ul li:hover,
+#index .anli .cont_b1 ul li:hover,
+#index .news .cont ul .hot:hover,
+#index .news .cont ul li:not(.hot):hover,
+#neiye .content .right_box .cont_box .product ul li:hover,
+#neiye .content .right_box .cont_box .video ul li:hover,
+#neiye .content .right_box .cont_box .news ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+#index .products .cp_cont .cp_bx ul li .pic,
+#index .products .cp_cont .cp_bx ul li .pic img {
+  transition: transform 0.35s ease;
+}
+
+#index .products .cp_cont .cp_bx ul li:hover .pic img {
+  transform: scale(1.02);
+}
+
+/* ---------- 轮播指示器（kinMaxShow 动态类名） ---------- */
+#kinMaxShow [class*="button"],
+#kinMaxShow [class*="Button"] {
+  transition: opacity 0.25s ease;
+}
+
+#kinMaxShow [class*="button"] a,
+#kinMaxShow [class*="button"] span,
+#kinMaxShow [class*="button"] div {
+  transition: transform 0.2s ease, opacity 0.25s ease, background-color 0.25s ease, border-color 0.25s ease !important;
+}
+
+#kinMaxShow [class*="button"] a:hover,
+#kinMaxShow [class*="button"] span:hover,
+#kinMaxShow [class*="button"] div:hover {
+  transform: scale(1.12);
+  opacity: 1 !important;
+}
+
+#kinMaxShow [class*="button"] a:active,
+#kinMaxShow [class*="button"] span:active {
+  transform: scale(0.95);
+}
+
+/* ---------- 移动端汉堡按钮点击反馈 ---------- */
+@media screen and (max-width: 768px) {
+  .kiwl-nav-btn {
+    transition: background-color 0.2s ease, transform 0.15s ease !important;
+  }
+
+  .kiwl-nav-btn:active {
+    transform: scale(0.94) !important;
+  }
+
+  body.kiwl-nav-open {
+    overflow-x: hidden;
+  }
+}
+

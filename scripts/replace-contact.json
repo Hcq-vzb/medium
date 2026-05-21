@@ -1,0 +1,67 @@
+[
+  {
+    "label": "联系我们详情块(div版)",
+    "old": "<div class=\"p\"><div>江苏鑫紫鲸机械制造集团有限公司</div>\n<div>&nbsp;</div>\n<div>联系人：张言歌</div>\n<div>手&nbsp; &nbsp;机：15262329861</div>\n<div>微&nbsp; &nbsp;信：15262329861</div>\n<div>电&nbsp; &nbsp;话：0512-58178676</div>\n<div>邮&nbsp; &nbsp;箱：zhang@king-machine.com</div>\n<div>地&nbsp; &nbsp;址：江苏省苏州市张家港市东莱镇东七公路22号&nbsp;</div>\n<div>网&nbsp; 址1：www.zjgjmx.com</div>\n<div>网&nbsp; 址2：www.zjgjmx.cn</div></div>",
+    "new": "<div class=\"p\"><div>CHING KILE MACHINE GROUP J.S（即KIWL鑫紫鲸）</div>\n<div>&nbsp;</div>\n<div>联系人：Mr.Wu | CEO</div>\n<div>手&nbsp; &nbsp;机：0086-18151132311</div>\n<div>微&nbsp; &nbsp;信：0086-18151132311</div>\n<div>电&nbsp; &nbsp;话：0086-0512-58658676</div>\n<div>邮&nbsp; &nbsp;箱：cathy@kiwlmachine.com</div>\n<div>地&nbsp; &nbsp;址：Building 4, Xingyuan Road, Nanfeng Town, Zhangjiagang City, Jiangsu Province, China</div>\n<div>网&nbsp; 址：www.kiwlmachine.com | mediumbeveragemachinery.com</div></div>"
+  },
+  {
+    "label": "联系我们详情块(p版)",
+    "old": "<p>江苏鑫紫鲸机械制造集团有限公司</p>\n<p>&nbsp;</p>\n<p>联系人：张言歌</p>\n<p>手&nbsp; &nbsp;机：15262329861</p>\n<p>微&nbsp; &nbsp;信：15262329861</p>\n<p>电&nbsp; &nbsp;话：0512-58178676</p>\n<p>邮&nbsp; &nbsp;箱：zhang@king-machine.com</p>\n<p>地&nbsp; &nbsp;址：江苏省苏州市张家港市东莱镇东七公路22号&nbsp;</p>\n<p>网&nbsp; 址1：www.zjgjmx.com</p>\n<p>网&nbsp; 址2：www.zjgjmx.cn</p>",
+    "new": "<p>CHING KILE MACHINE GROUP J.S（即KIWL鑫紫鲸）</p>\n<p>&nbsp;</p>\n<p>联系人：Mr.Wu | CEO</p>\n<p>手&nbsp; &nbsp;机：0086-18151132311</p>\n<p>微&nbsp; &nbsp;信：0086-18151132311</p>\n<p>电&nbsp; &nbsp;话：0086-0512-58658676</p>\n<p>邮&nbsp; &nbsp;箱：cathy@kiwlmachine.com</p>\n<p>地&nbsp; &nbsp;址：Building 4, Xingyuan Road, Nanfeng Town, Zhangjiagang City, Jiangsu Province, China</p>\n<p>网&nbsp; 址：www.kiwlmachine.com | mediumbeveragemachinery.com</p>"
+  },
+  {
+    "label": "公司地址",
+    "old": "江苏省苏州市张家港市东莱镇东七公路22号",
+    "new": "Building 4, Xingyuan Road, Nanfeng Town, Zhangjiagang City, Jiangsu Province, China"
+  },
+  {
+    "label": "联系人",
+    "old": "联系人：张言歌",
+    "new": "联系人：Mr.Wu | CEO"
+  },
+  {
+    "label": "邮箱zhang",
+    "old": "zhang@king-machine.com",
+    "new": "cathy@kiwlmachine.com"
+  },
+  {
+    "label": "邮箱info",
+    "old": "info@king-machine.com",
+    "new": "cathy@kiwlmachine.com"
+  },
+  {
+    "label": "旧手机15051717817",
+    "old": "15051717817",
+    "new": "0086-18151132311"
+  },
+  {
+    "label": "旧手机15262329861",
+    "old": "15262329861",
+    "new": "0086-18151132311"
+  },
+  {
+    "label": "电话传真",
+    "old": "0512-58178676",
+    "new": "0086-0512-58658676"
+  },
+  {
+    "label": "网址1",
+    "old": "网&nbsp; 址1：www.zjgjmx.com",
+    "new": "网&nbsp; 址1：www.kiwlmachine.com"
+  },
+  {
+    "label": "网址2",
+    "old": "网&nbsp; 址2：www.zjgjmx.cn",
+    "new": "网&nbsp; 址2：mediumbeveragemachinery.com"
+  },
+  {
+    "label": "联系页公司名p",
+    "old": "<p>江苏鑫紫鲸机械制造集团有限公司</p>",
+    "new": "<p>CHING KILE MACHINE GROUP J.S（即KIWL鑫紫鲸）</p>"
+  },
+  {
+    "label": "联系页公司名div",
+    "old": "<div>江苏鑫紫鲸机械制造集团有限公司</div>",
+    "new": "<div>CHING KILE MACHINE GROUP J.S（即KIWL鑫紫鲸）</div>"
+  }
+]

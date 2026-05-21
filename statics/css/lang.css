@@ -1,0 +1,410 @@
+@charset "utf-8";
+/**
+ * 双语切换 EN | AR（English / العربية）
+ */
+
+.kiwl-lang-switcher {
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: 12px;
+  z-index: 12;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.kiwl-lang-switcher--desktop {
+  display: inline-flex !important;
+  visibility: visible !important;
+  align-items: center;
+  height: 32px;
+  padding: 0 4px;
+  border: 1px solid #c5d4e8;
+  border-radius: 4px;
+  background: #f7fafc;
+  box-sizing: border-box;
+}
+
+.kiwl-lang-seg {
+  min-width: 36px;
+  height: 26px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  color: #0e4d90;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 26px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.kiwl-lang-seg[data-lang-select="ar"] {
+  min-width: 40px;
+  letter-spacing: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.kiwl-lang-seg:hover {
+  background: rgba(14, 77, 144, 0.08);
+}
+
+.kiwl-lang-seg.is-active {
+  background: #0e4d90;
+  color: #fff;
+}
+
+.kiwl-lang-sep {
+  color: #b0c4d8;
+  font-size: 11px;
+  line-height: 1;
+  user-select: none;
+  padding: 0 1px;
+}
+
+#header .top_bx .hotline {
+  margin-left: auto !important;
+}
+
+#header .top_bx .kiwl-lang-switcher--desktop {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .kiwl-lang-switcher--desktop {
+    display: none !important;
+  }
+
+  #header .link_nav .kiwl-lang-switcher--mobile {
+    display: inline-flex !important;
+    position: absolute !important;
+    right: 64px !important;
+    top: 10px !important;
+    margin: 0 !important;
+    z-index: 10003 !important;
+    height: 36px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+  }
+
+  #header .link_nav .kiwl-lang-switcher--mobile .kiwl-lang-seg {
+    color: #fff;
+    min-width: 40px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+  }
+
+  #header .link_nav .kiwl-lang-switcher--mobile .kiwl-lang-seg:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  #header .link_nav .kiwl-lang-switcher--mobile .kiwl-lang-seg.is-active {
+    background: #fff;
+    color: #0e4d90;
+  }
+
+  #header .link_nav .kiwl-lang-switcher--mobile .kiwl-lang-sep {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+/* 阿拉伯语 RTL */
+html[dir="rtl"] body.kiwl-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] #header .top_bx .cont {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] #header .top_bx .brand_group {
+  align-items: flex-end;
+  text-align: right;
+}
+
+html[dir="rtl"] #header .top_bx .hotline {
+  text-align: right;
+  align-items: flex-end;
+  padding-left: 12px !important;
+  padding-right: 56px !important;
+  background-position: right center !important;
+}
+
+html[dir="rtl"] .kiwl-lang-switcher--desktop {
+  margin-left: 0 !important;
+  margin-right: 10px !important;
+}
+
+html[dir="rtl"] #header .link_nav ul li {
+  float: right;
+}
+
+html[dir="rtl"] #header .link_nav ul li a {
+  text-align: right;
+}
+
+html[dir="rtl"] #footer .foot_nav,
+html[dir="rtl"] #footer .contacts {
+  text-align: right;
+}
+
+/* About / inner pages RTL */
+html[dir="rtl"] #neiye .content {
+  direction: rtl;
+}
+
+html[dir="rtl"] #neiye .left_box {
+  float: right;
+  text-align: right;
+}
+
+html[dir="rtl"] #neiye .right_box {
+  float: left;
+  text-align: right;
+}
+
+html[dir="rtl"] #neiye .title_bt h1,
+html[dir="rtl"] #neiye .title_bt h4,
+html[dir="rtl"] #neiye .details,
+html[dir="rtl"] #neiye .details h3,
+html[dir="rtl"] #neiye .details .p,
+html[dir="rtl"] #neiye .details .p div {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] #neiye .hotline_box,
+html[dir="rtl"] #neiye .rm_news,
+html[dir="rtl"] #neiye .nva_box {
+  text-align: right;
+}
+
+html[dir="rtl"] #neiye .rm_news .date {
+  text-align: right;
+}
+
+html[dir="rtl"] #remen .box_01,
+html[dir="rtl"] #remen .box_02 {
+  text-align: right;
+}
+
+html[dir="rtl"] #remen li {
+  text-align: right;
+}
+
+html[dir="rtl"] #index .about,
+html[dir="rtl"] #index .products,
+html[dir="rtl"] #index .video,
+html[dir="rtl"] #index .news,
+html[dir="rtl"] #index .wangdian,
+html[dir="rtl"] #index .anli,
+html[dir="rtl"] #index .youshi {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] #index .us_bx,
+html[dir="rtl"] #index .tit,
+html[dir="rtl"] #index .tit h2,
+html[dir="rtl"] #index .tit h3 {
+  text-align: right;
+}
+
+html[dir="rtl"] #index .news .left_bx ul,
+html[dir="rtl"] #index .news .right_bx ul {
+  float: none !important;
+}
+
+html[dir="rtl"] #index .news .tit_bt h2 {
+  float: none !important;
+  text-align: right;
+}
+
+html[dir="rtl"] #index .news li span {
+  float: left !important;
+}
+
+html[dir="rtl"] #neiye .title_bt,
+html[dir="rtl"] #neiye .bread,
+html[dir="rtl"] .bread_nav {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] #index .products .cp_cont .class_bx,
+html[dir="rtl"] #index .products .cp_bx {
+  direction: rtl;
+}
+
+html[dir="rtl"] #index .about .info_bx ul li {
+  text-align: right;
+}
+
+html[dir="rtl"] .kiwl-banner-arrow.kiwl-banner-prev {
+  left: auto;
+  right: 16px;
+}
+
+html[dir="rtl"] .kiwl-banner-arrow.kiwl-banner-next {
+  right: auto;
+  left: 16px;
+}
+
+html[dir="rtl"] #footer .bottom {
+  text-align: right;
+}
+
+html[dir="rtl"] #footer .bottom span {
+  float: left !important;
+}
+
+html[dir="rtl"] body {
+  font-family: "Segoe UI", Tahoma, "Arabic Typesetting", "Traditional Arabic", Arial, sans-serif;
+}
+
+html[dir="rtl"] .kiwl-lang-seg[data-lang-select="ar"] {
+  font-family: "Segoe UI", Tahoma, "Arabic Typesetting", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  html[dir="rtl"] body.kiwl-rtl {
+    direction: rtl !important;
+    text-align: right !important;
+  }
+
+  html[dir="rtl"] #header .top_bx .cont {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  html[dir="rtl"] #header .top_bx .brand_group {
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+
+  html[dir="rtl"] #header .top_bx .hotline {
+    text-align: right !important;
+    align-items: flex-end !important;
+    padding-left: 12px !important;
+    padding-right: 56px !important;
+    background-position: right center !important;
+  }
+
+  html[dir="rtl"] #header .link_nav .kiwl-lang-switcher--mobile {
+    right: auto !important;
+    left: 12px !important;
+  }
+
+  html[dir="rtl"] .kiwl-nav-btn {
+    right: auto !important;
+    left: 12px !important;
+  }
+
+  html[dir="rtl"] #header .link_nav ul {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #header .link_nav ul li {
+    float: none !important;
+    text-align: right !important;
+  }
+
+  html[dir="rtl"] #header .link_nav ul li a {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #neiye .content {
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #neiye .content .left_box,
+  html[dir="rtl"] #neiye .content .right_box {
+    float: none !important;
+    width: 100% !important;
+    text-align: right !important;
+    direction: rtl !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  html[dir="rtl"] #neiye .title_bt,
+  html[dir="rtl"] #neiye .title_bt h1,
+  html[dir="rtl"] #neiye .title_bt h4,
+  html[dir="rtl"] #neiye .bread,
+  html[dir="rtl"] .bread_nav {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] .details,
+  html[dir="rtl"] .details .p,
+  html[dir="rtl"] .details .p div,
+  html[dir="rtl"] .content_at .text,
+  html[dir="rtl"] .cont_box {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #index .about,
+  html[dir="rtl"] #index .about .cont .us_bx,
+  html[dir="rtl"] #index .products,
+  html[dir="rtl"] #index .news,
+  html[dir="rtl"] #index .youshi,
+  html[dir="rtl"] #index .anli {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #index .news li span {
+    float: left !important;
+  }
+
+  html[dir="rtl"] #footer .w_1200,
+  html[dir="rtl"] #footer .mid_nav,
+  html[dir="rtl"] #footer .contacts,
+  html[dir="rtl"] #footer .foot_nav ul {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #remen .box_01,
+  html[dir="rtl"] #remen .box_02,
+  html[dir="rtl"] #remen li,
+  html[dir="rtl"] #remen li a {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] a.more,
+  html[dir="rtl"] .kstd_bx a,
+  html[dir="rtl"] input[type="submit"],
+  html[dir="rtl"] button {
+    text-align: center !important;
+  }
+
+  html[dir="rtl"] .kiwl-float-contact {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  html[dir="rtl"] .cp_box_one .n_box h4,
+  html[dir="rtl"] .cp_box_one .n_box1 h4,
+  html[dir="rtl"] .cp_box_one .n_box p,
+  html[dir="rtl"] .cp_box_one .n_box1 p {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  html[dir="rtl"] #gbook_box .text,
+  html[dir="rtl"] .kiwl-inquiry-form,
+  html[dir="rtl"] .kiwl-inquiry-form ul li span {
+    text-align: right !important;
+    direction: rtl !important;
+  }
+}

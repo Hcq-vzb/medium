@@ -1,0 +1,38 @@
+{
+  "at": "2026-05-21T12:14:46.267Z",
+  "count": 4,
+  "issues": [
+    {
+      "file": "index.html",
+      "href": "html/about/index.html",
+      "label": "More&gt;&gt;",
+      "brokenPrefix": true,
+      "exists": true,
+      "target": "html/about/index.html"
+    },
+    {
+      "file": "index.html",
+      "href": "html/product/index.html",
+      "label": "view more",
+      "brokenPrefix": true,
+      "exists": true,
+      "target": "html/product/index.html"
+    },
+    {
+      "file": "index.html",
+      "href": "html/about/index.html",
+      "label": "(html/ prefix)",
+      "brokenPrefix": true,
+      "exists": true,
+      "target": "html/about/index.html"
+    },
+    {
+      "file": "index.html",
+      "href": "html/product/index.html",
+      "label": "(html/ prefix)",
+      "brokenPrefix": true,
+      "exists": true,
+      "target": "html/product/index.html"
+    }
+  ]
+}

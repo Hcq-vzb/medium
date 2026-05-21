@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+
+Disallow: /scripts/
+Disallow: /docs/
+Disallow: /*.bak
+Disallow: /*.bak.html
+Disallow: /uploadfile/temp/
+Disallow: /test/
+
 Sitemap: https://mediumbeveragemachinery.com/sitemap.xml

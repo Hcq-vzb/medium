@@ -1,0 +1,249 @@
+@charset "utf-8";
+/**
+ * 产品系列侧边栏 + 我们的优势 模块交互（仅 CSS 增强，不改布局与配色）
+ */
+:root {
+  --kiwl-primary: #0e4d90;
+  --kiwl-primary-light: #0093d3;
+  --kiwl-hover-bg: #f0f7ff;
+  --kiwl-ease: 0.3s ease;
+}
+
+/* ========== 模块1：首页「产品系列」侧边栏 .class_bx ========== */
+#index .products .cp_cont .class_bx ul li {
+  position: relative;
+  transition: background-color var(--kiwl-ease), color var(--kiwl-ease);
+}
+
+#index .products .cp_cont .class_bx ul li a {
+  display: block;
+  transition: color var(--kiwl-ease);
+}
+
+#index .products .cp_cont .class_bx ul li::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -1px;
+  border-right: 2px solid #b0b0b0;
+  border-bottom: 2px solid #b0b0b0;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform var(--kiwl-ease), border-color var(--kiwl-ease);
+  pointer-events: none;
+}
+
+#index .products .cp_cont .class_bx ul li:hover,
+#index .products .cp_cont .class_bx ul li.kiwl-nav-current {
+  background-color: var(--kiwl-hover-bg);
+}
+
+#index .products .cp_cont .class_bx ul li:hover a,
+#index .products .cp_cont .class_bx ul li.kiwl-nav-current a {
+  color: var(--kiwl-primary);
+  text-decoration: none;
+}
+
+#index .products .cp_cont .class_bx ul li:hover::after,
+#index .products .cp_cont .class_bx ul li.kiwl-nav-current::after {
+  transform: translateY(-50%) rotate(45deg);
+  border-color: var(--kiwl-primary);
+}
+
+#index .products .cp_cont .class_bx ul li.kiwl-nav-current {
+  box-shadow: inset 3px 0 0 var(--kiwl-primary);
+}
+
+@media (hover: none) {
+  #index .products .cp_cont .class_bx ul li:active {
+    background-color: var(--kiwl-hover-bg);
+  }
+
+  #index .products .cp_cont .class_bx ul li:active a {
+    color: var(--kiwl-primary);
+    text-decoration: none;
+  }
+
+  #index .products .cp_cont .class_bx ul li:active::after {
+    transform: translateY(-50%) rotate(45deg);
+    border-color: var(--kiwl-primary);
+  }
+}
+
+/* ========== 模块1：内页左侧 .nva_box 产品导航 ========== */
+#neiye .content .left_box .nva_box h3,
+#neiye .content .left_box .nva_box li.subclass {
+  position: relative;
+  transition: background-color var(--kiwl-ease), box-shadow var(--kiwl-ease);
+}
+
+#neiye .content .left_box .nva_box h3 a,
+#neiye .content .left_box .nva_box li.subclass a {
+  transition: color var(--kiwl-ease);
+}
+
+#neiye .content .left_box .nva_box h3.off::after,
+#neiye .content .left_box .nva_box h3.on::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: transform var(--kiwl-ease), border-color var(--kiwl-ease);
+  pointer-events: none;
+}
+
+#neiye .content .left_box .nva_box h3.off:hover,
+#neiye .content .left_box .nva_box li.subclass:hover,
+#neiye .content .left_box .nva_box h3.kiwl-nav-current,
+#neiye .content .left_box .nva_box li.subclass.kiwl-nav-current {
+  background-color: var(--kiwl-hover-bg);
+}
+
+#neiye .content .left_box .nva_box h3.off:hover a,
+#neiye .content .left_box .nva_box li.subclass:hover a,
+#neiye .content .left_box .nva_box h3.kiwl-nav-current a,
+#neiye .content .left_box .nva_box li.subclass.kiwl-nav-current a {
+  color: var(--kiwl-primary);
+  text-decoration: none;
+}
+
+#neiye .content .left_box .nva_box h3.off:hover::after,
+#neiye .content .left_box .nva_box h3.kiwl-nav-current::after {
+  transform: translateY(-50%) rotate(45deg);
+  border-color: var(--kiwl-primary);
+}
+
+#neiye .content .left_box .nva_box h3.kiwl-nav-current,
+#neiye .content .left_box .nva_box li.subclass.kiwl-nav-current {
+  box-shadow: inset 3px 0 0 var(--kiwl-primary);
+}
+
+#neiye .content .left_box .nva_box h3.on {
+  box-shadow: inset 3px 0 0 rgba(255, 255, 255, 0.85);
+}
+
+#neiye .content .left_box .nva_box h3.on::after {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+#neiye .content .left_box .nva_box h3.on:hover::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+@media (hover: none) {
+  #neiye .content .left_box .nva_box h3.off:active,
+  #neiye .content .left_box .nva_box li.subclass:active {
+    background-color: var(--kiwl-hover-bg);
+  }
+
+  #neiye .content .left_box .nva_box h3.off:active a,
+  #neiye .content .left_box .nva_box li.subclass:active a {
+    color: var(--kiwl-primary);
+    text-decoration: none;
+  }
+}
+
+/* ========== 模块2：「我们的优势」卡片 ========== */
+#index .youshi .cont ul li {
+  transition: transform var(--kiwl-ease), box-shadow var(--kiwl-ease);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+#index .youshi .cont ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+#index .youshi .cont ul li .img_inc {
+  transition: transform var(--kiwl-ease), filter var(--kiwl-ease);
+  transform-origin: center center;
+}
+
+#index .youshi .cont ul li:hover .img_inc {
+  transform: scale(1.05);
+  filter: brightness(1.08);
+}
+
+#index .youshi .cont ul li h2 {
+  transition: color var(--kiwl-ease), text-shadow var(--kiwl-ease);
+}
+
+#index .youshi .cont ul li:hover h2 {
+  color: #fff;
+  text-shadow: 0 1px 14px rgba(255, 255, 255, 0.35);
+}
+
+/* VIEW MORE 按钮（覆盖通用按钮缩放，保持稳重） */
+#index .youshi .cont .tit_bt a.more {
+  transition: background-color var(--kiwl-ease), color var(--kiwl-ease), transform var(--kiwl-ease), filter var(--kiwl-ease);
+}
+
+#index .youshi .cont .tit_bt a.more:hover {
+  background-color: #2d3640;
+  color: #fff;
+  filter: brightness(1.1);
+  transform: none;
+}
+
+#index .youshi .cont .tit_bt a.more:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
+}
+
+@media (hover: none) {
+  #index .youshi .cont ul li:active {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+  }
+
+  #index .youshi .cont ul li:active .img_inc {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+  }
+}
+
+/* 滚动渐入（可选） */
+#index .youshi.kiwl-youshi-reveal .cont ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--kiwl-ease), transform var(--kiwl-ease), box-shadow var(--kiwl-ease);
+}
+
+#index .youshi.kiwl-youshi-reveal.kiwl-youshi-visible .cont ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#index .youshi.kiwl-youshi-reveal.kiwl-youshi-visible .cont ul li:nth-child(1) {
+  transition-delay: 0s;
+}
+
+#index .youshi.kiwl-youshi-reveal.kiwl-youshi-visible .cont ul li:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+#index .youshi.kiwl-youshi-reveal.kiwl-youshi-visible .cont ul li:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+#index .youshi.kiwl-youshi-reveal.kiwl-youshi-visible .cont ul li:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #index .products .cp_cont .class_bx ul li::after,
+  #neiye .content .left_box .nva_box h3::after,
+  #index .youshi .cont ul li,
+  #index .youshi.kiwl-youshi-reveal .cont ul li {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "at": "2026-05-21T12:05:31.373Z",
+  "results": [
+    {
+      "page": "index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.053
+    },
+    {
+      "page": "product/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.026
+    },
+    {
+      "page": "about/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.025
+    },
+    {
+      "page": "about/gongsijianjie/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.025
+    },
+    {
+      "page": "contactus/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.048
+    },
+    {
+      "page": "contactus/contacts/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.047
+    },
+    {
+      "page": "message/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.034
+    },
+    {
+      "page": "news/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.03
+    },
+    {
+      "page": "jishuzhichi/index.html",
+      "status": "pass",
+      "hasLang": true,
+      "hasRtl": true,
+      "englishWordsLeft": 0,
+      "sampleWords": [],
+      "latinRatio": 0.027
+    }
+  ]
+}

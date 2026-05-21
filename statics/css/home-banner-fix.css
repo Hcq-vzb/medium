@@ -1,0 +1,147 @@
+@charset "utf-8";
+/**
+ * Homepage kinMaxShow banner — visibility, layout, arrows (index only)
+ */
+
+.indx_banner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 650px;
+  overflow: hidden;
+  line-height: 0;
+  background: #1a3a5c;
+}
+
+/* Pre-init: avoid flash of unstyled slides; JS adds .kiwl-banner-ready */
+#kinMaxShow.kiwl-banner-loading {
+  visibility: hidden;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#kinMaxShow.kiwl-banner-ready,
+#kinMaxShow.kiwl-banner-fallback {
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  height: 650px !important;
+  min-height: 650px !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#kinMaxShow [class*="_image_box"] {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#kinMaxShow [class*="_image_item"] {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+#kinMaxShow [class*="_image_item"] img {
+  display: block;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Dot indicators (kinMaxShow injected ul) */
+#kinMaxShow > ul {
+  z-index: 8 !important;
+}
+
+/* Prev / next arrows */
+.kiwl-banner-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  width: 44px;
+  height: 64px;
+  margin-top: -32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.kiwl-banner-arrow:hover {
+  opacity: 1;
+}
+
+.kiwl-banner-prev {
+  left: 12px;
+  background-image: url(../images/left.png);
+}
+
+.kiwl-banner-next {
+  right: 12px;
+  background-image: url(../images/right.png);
+}
+
+/* Desktop: ensure banner visible after init (responsive only covered mobile before) */
+@media screen and (min-width: 769px) {
+  #kinMaxShow.kiwl-banner-ready,
+  #kinMaxShow.kiwl-banner-fallback,
+  #kinMaxShow.kiwl-banner-loading {
+    visibility: visible !important;
+  }
+
+  #kinMaxShow.kiwl-banner-loading {
+    opacity: 0.01;
+  }
+
+  #kinMaxShow.kiwl-banner-ready,
+  #kinMaxShow.kiwl-banner-fallback {
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .indx_banner {
+    height: auto;
+    min-height: 220px;
+  }
+
+  #kinMaxShow.kiwl-banner-ready,
+  #kinMaxShow.kiwl-banner-fallback {
+    height: clamp(220px, 56vw, 320px) !important;
+    min-height: 220px !important;
+    max-height: 320px !important;
+  }
+
+  #kinMaxShow [class*="_image_item"] img {
+    height: 100%;
+    min-height: 220px;
+  }
+
+  .kiwl-banner-arrow {
+    width: 36px;
+    height: 52px;
+    margin-top: -26px;
+  }
+
+  .kiwl-banner-prev {
+    left: 6px;
+  }
+
+  .kiwl-banner-next {
+    right: 6px;
+  }
+}
