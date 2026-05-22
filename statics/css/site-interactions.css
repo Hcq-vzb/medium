@@ -87,6 +87,12 @@ a.more:hover,
   filter: brightness(0.92);
 }
 
+#index .products .cp_cont .cp_bx ul li a.more:hover,
+#index .products .cp_cont .cp_bx ul li a.more:active {
+  transform: translateY(-1px);
+  filter: none;
+}
+
 a.more:active,
 #index .youshi .cont .tit_bt a.more:active,
 #neiye .content .right_box .cont_box .next_page a.fanhui:active,

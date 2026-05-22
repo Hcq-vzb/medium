@@ -1,17 +1,20 @@
 # Homepage layout fix checklist
 
-**Date:** 2026-05-21  
+**Date:** 2026-05-22 (updated)  
 **Scope:** `index.html` + `statics/css/home-layout-fix.css` (homepage only)
 
 ## 一、产品区（Product Showcase）
 
 | 问题 | 修复位置 | 效果 |
 |------|----------|------|
-| 产品标题/描述挤在一起、固定 40px/84px 高度导致重叠 | `home-layout-fix.css` → `#index .products .cp_bx ul li` | 卡片改为 flex 列布局，`height: auto`，标题多行换行，描述最多 4 行截断 |
-| 卡片高低不齐 | 同上 + `min-height` 统一 | 三列等宽 flex，间距 18px |
-| 侧栏与产品区挤压 | `#index .products .cp_cont` flex + `gap: 24px` | 左侧导航 220px，右侧产品区自适应 |
-| 图片中文水印 | `.pic::after` 底部渐变遮罩 + `object-position` 略上移 | 弱化角标水印（烧录在图中的文字需换图才能完全去除） |
-| 乱码描述文案 | `index.html` 产品 285–289 号卡片 `<p>` | 改为通顺英文业务描述 |
+| 桌面端无法稳定三列、易变成 2/4 列 | `home-layout-fix.css` → `.cp_bx ul` **CSS Grid** `repeat(3, 1fr)` | 桌面固定 3×3（9 张卡片），取消 `min-width: 260px` 折行 |
+| 平板/手机断点 | `@media 768–1024` 两列；`max-width: 767` 单列 | 与 `responsive.css` 浮动规则用 `!important` 覆盖，避免错位 |
+| 产品仅 6 个 | `index.html` 新增 3 张卡片 | 纯净水 / 矿泉水 / 碳酸饮料灌装机，共 **9** 个产品 |
+| 产品标题/描述挤在一起 | `#index .products .cp_bx ul li` flex 列 | 标题、描述 `line-height` 统一，描述 `-webkit-line-clamp: 4` |
+| 侧栏与产品区挤压 | `#index .products .cp_cont` flex + 侧栏 220px | 与 `.w1200` 居中对齐，右侧网格自适应 |
+| 图片中文水印 | `.pic::before` 右下角 + `.pic::after` 底边渐变 | 弱化 KIWL/鑫紫鲸 角标（烧录文字需换图才能彻底去除） |
+| View More 空框/无文字 | `lang.js` 跳过 `data-lang-key` 文本快照；`a.more` 去除 `more_bg.jpg` 背景图 | EN「View More」/ AR「عرض المزيد」白字蓝底可点击 |
+| RTL 阿拉伯语 | `html[dir="rtl"] .cp_bx ul { direction: rtl }` | 网格从右向左排布，文案右对齐 |
 
 ## 二、优势区（Our Advantages）
 

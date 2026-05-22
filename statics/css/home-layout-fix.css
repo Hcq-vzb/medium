@@ -4,14 +4,22 @@
  * Load after responsive.css / lang.css on index.html only
  */
 
-/* ========== Product showcase ========== */
+/* ========== Product showcase (3×3 grid, EN + AR RTL) ========== */
+#index .products .w1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
 #index .products .cp_cont {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   gap: 24px;
   padding-top: 32px !important;
   box-sizing: border-box;
+  width: 100%;
 }
 
 #index .products .cp_cont::after {
@@ -22,48 +30,63 @@
   float: none !important;
   flex: 0 0 220px;
   max-width: 220px;
+  width: 220px !important;
   margin: 0;
+  box-sizing: border-box;
 }
 
 #index .products .cp_cont .cp_bx {
   float: none !important;
-  flex: 1 1 680px;
+  flex: 1 1 auto;
   min-width: 0;
   width: auto !important;
-  max-width: calc(100% - 244px);
+  max-width: none !important;
+  margin-left: 0 !important;
 }
 
 #index .products .cp_cont .cp_bx ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #index .products .cp_cont .cp_bx ul li {
   float: none !important;
-  margin-left: 0 !important;
-  margin-bottom: 0 !important;
-  width: calc(33.333% - 12px) !important;
-  min-width: 260px;
+  margin: 0 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
   height: auto !important;
-  min-height: 420px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   box-sizing: border-box;
   overflow: hidden;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
 }
 
 #index .products .cp_cont .cp_bx ul li .pic {
   flex-shrink: 0;
   height: 200px !important;
-  padding: 6px !important;
+  padding: 8px !important;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  background: #f7f7f7;
+}
+
+#index .products .cp_cont .cp_bx ul li .pic a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #index .products .cp_cont .cp_bx ul li .pic img {
@@ -71,33 +94,46 @@
   height: 100% !important;
   max-width: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 28%;
   display: block;
 }
 
-/* Crop typical bottom-corner CN watermarks on product photos */
+/* Mask baked-in CN corner watermarks (KIWL / 鑫紫鲸) on product photos */
+#index .products .cp_cont .cp_bx ul li .pic::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 42%;
+  height: 28%;
+  pointer-events: none;
+  z-index: 2;
+  background: linear-gradient(135deg, transparent 35%, rgba(255, 255, 255, 0.97) 65%);
+}
+
 #index .products .cp_cont .cp_bx ul li .pic::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 22%;
+  height: 24%;
   pointer-events: none;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.92), transparent);
+  z-index: 1;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95), transparent);
 }
 
 #index .products .cp_cont .cp_bx ul li .bt {
   height: auto !important;
-  min-height: 48px;
-  line-height: 1.35 !important;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  padding: 6px 14px 10px !important;
+  min-height: 52px;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  padding: 10px 14px 8px !important;
   background: none !important;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #eee;
   text-align: center;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 #index .products .cp_cont .cp_bx ul li .bt a {
@@ -106,18 +142,18 @@
   display: block;
   white-space: normal !important;
   word-wrap: break-word;
-  overflow-wrap: anywhere;
-  line-height: 1.4;
+  overflow-wrap: break-word;
+  line-height: 1.45;
   color: #222;
 }
 
 #index .products .cp_cont .cp_bx ul li p {
   height: auto !important;
-  min-height: 56px;
+  min-height: 72px;
   max-height: none;
   flex: 1 1 auto;
   line-height: 1.55 !important;
-  padding: 8px 14px 12px !important;
+  padding: 10px 14px !important;
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
@@ -125,11 +161,65 @@
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  color: #555;
+  font-size: 13px;
+  text-align: center;
 }
 
 #index .products .cp_cont .cp_bx ul li a.more {
   flex-shrink: 0;
-  margin: 0 auto 14px !important;
+  align-self: center;
+  margin: 0 auto 16px !important;
+  padding: 0 22px !important;
+  min-width: 128px;
+  width: auto !important;
+  max-width: calc(100% - 28px);
+  height: 36px !important;
+  line-height: 36px !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff !important;
+  background: #0e4d90 none no-repeat center !important;
+  background-image: none !important;
+  border-radius: 3px;
+  border: none !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
+  text-transform: none;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  white-space: nowrap;
+  display: inline-block !important;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+#index .products .cp_cont .cp_bx ul li a.more:hover,
+#index .products .cp_cont .cp_bx ul li a.more:focus {
+  background: #0a3d72 none no-repeat center !important;
+  background-image: none !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(14, 77, 144, 0.35);
+}
+
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul li a.more {
+  text-align: center !important;
+  direction: rtl;
+  white-space: normal;
+  line-height: 1.35 !important;
+  min-height: 36px;
+  height: auto !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }
 
 /* ========== Advantages ========== */
@@ -409,6 +499,25 @@ html[dir="rtl"] #index .products .cp_cont {
   flex-direction: row-reverse;
 }
 
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul {
+  direction: rtl;
+}
+
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul li {
+  text-align: right;
+}
+
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul li .bt,
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul li p {
+  text-align: right;
+}
+
+html[dir="rtl"] #index .products .cp_cont .cp_bx ul li .pic::before {
+  right: auto;
+  left: 0;
+  background: linear-gradient(225deg, transparent 35%, rgba(255, 255, 255, 0.97) 65%);
+}
+
 html[dir="rtl"] #index .products .cp_cont .class_bx ul li {
   padding-left: 16px;
   padding-right: 64px;
@@ -448,16 +557,40 @@ html[dir="rtl"] #index .wangdian .w1200 ul {
   direction: rtl;
 }
 
-/* ========== Tablet ========== */
-@media screen and (max-width: 1024px) {
-  #index .products .cp_cont .cp_bx {
-    max-width: 100%;
+/* ========== Tablet (768px–1024px): 2 columns ========== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #index .products .cp_cont {
+    flex-wrap: wrap;
+  }
+
+  #index .products .cp_cont .class_bx {
     flex: 1 1 100%;
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  #index .products .cp_cont .cp_bx {
+    flex: 1 1 100%;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  #index .products .cp_cont .cp_bx ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px;
   }
 
   #index .products .cp_cont .cp_bx ul li {
-    width: calc(50% - 9px) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    float: none !important;
   }
+}
+
+/* ========== Other homepage sections — tablet ========== */
+@media screen and (max-width: 1024px) {
 
   #index .youshi .cont .tit_bt {
     flex: 1 1 100%;
@@ -481,16 +614,37 @@ html[dir="rtl"] #index .wangdian .w1200 ul {
   }
 }
 
-/* ========== Mobile ========== */
-@media screen and (max-width: 768px) {
+/* ========== Mobile (<768px): 1 column ========== */
+@media screen and (max-width: 767px) {
   #index .products .cp_cont {
     gap: 0;
+    flex-wrap: wrap;
+  }
+
+  #index .products .cp_cont .cp_bx ul {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
   }
 
   #index .products .cp_cont .cp_bx ul li {
     width: 100% !important;
-    min-width: 0;
+    min-width: 0 !important;
     min-height: 0;
+    margin-left: 0 !important;
+    float: none !important;
+  }
+
+  #index .products .cp_cont .cp_bx ul li a.more {
+    min-height: 44px !important;
+    line-height: 44px !important;
+    height: 44px !important;
+    white-space: normal;
+  }
+
+  html[dir="rtl"] #index .products .cp_cont .cp_bx ul li a.more {
+    line-height: 1.4 !important;
+    height: auto !important;
+    min-height: 44px !important;
   }
 
   #index .youshi .cont ul li {

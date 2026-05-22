@@ -701,6 +701,8 @@
 
       if (p.id === 'kiwl-lang-switcher') return true;
 
+      if (p.getAttribute && p.getAttribute('data-lang-key')) return true;
+
       p = p.parentNode;
 
     }
@@ -712,8 +714,6 @@
 
 
   function captureSnapshots() {
-
-    if (textSnapshots) return;
 
     textSnapshots = [];
 
@@ -748,6 +748,8 @@
     root.querySelectorAll('*').forEach(function (el) {
 
       if (el.id === 'kiwl-lang-switcher') return;
+
+      if (el.getAttribute('data-lang-key')) return;
 
       attrNames.forEach(function (attr) {
 
