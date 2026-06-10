@@ -60,7 +60,7 @@ checks.push({
   detail: navBad + ' mismatches'
 });
 
-const floatOk = fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('kiwl-float-contact');
+const floatOk = fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('kiwl-chat-widget');
 checks.push({ name: 'Float contact on index', ok: floatOk, detail: '' });
 
 const moreOk =

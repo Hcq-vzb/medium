@@ -1,0 +1,19 @@
+<!-- kiwl-chat-widget -->
+<script>
+(function () {
+  if (document.getElementById('kiwl-chat-widget') || window.__kiwlChatLoading) return;
+  window.__kiwlChatLoading = true;
+  var ref = document.querySelector('script[src*="statics/js/lang.js"]') ||
+    document.querySelector('script[src*="statics/js/seo-meta-ar.js"]') ||
+    document.querySelector('script[src*="statics/js/"]');
+  var prefix = 'statics/js/';
+  if (ref) {
+    prefix = (ref.getAttribute('src') || '').replace(/[^/]+$/, '');
+  }
+  var s = document.createElement('script');
+  s.src = prefix + 'kiwl-chat-widget.js';
+  s.defer = true;
+  s.onload = function () { window.__kiwlChatLoading = false; };
+  document.body.appendChild(s);
+})();
+</script>

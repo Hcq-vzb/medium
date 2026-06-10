@@ -7,14 +7,15 @@ const cfg = require('./seo-config');
 
 const root = path.join(__dirname, '..');
 const BRAND_SUFFIX = ' | ' + cfg.BRAND;
-const MAX_TITLE = 60;
+const MAX_TITLE = 72;
 const MAX_DESC = 160;
+const SKIP_DIRS = new Set(['node_modules', '.git', 'scripts', 'docs', 'statics', 'uploadfile', 'html']);
 
 function walkHtml(dir, list = []) {
   for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, ent.name);
     if (ent.isDirectory()) {
-      if (['node_modules', '.git', 'scripts', 'docs'].includes(ent.name)) continue;
+      if (SKIP_DIRS.has(ent.name)) continue;
       walkHtml(p, list);
     } else if (ent.name.endsWith('.html')) list.push(p);
   }
@@ -27,10 +28,14 @@ function truncate(str, max) {
 }
 
 function buildTitle(mainPart) {
-  let t = mainPart + BRAND_SUFFIX;
+  const clean = (mainPart || 'Beverage Filling Machine').replace(/\s+/g, ' ').trim();
+  let t = clean + BRAND_SUFFIX;
   if (t.length <= MAX_TITLE) return t;
-  const avail = MAX_TITLE - BRAND_SUFFIX.length - 3;
-  return mainPart.slice(0, avail).trim() + '...' + BRAND_SUFFIX;
+  const avail = MAX_TITLE - BRAND_SUFFIX.length;
+  let cut = clean.slice(0, avail);
+  const sp = cut.lastIndexOf(' ');
+  if (sp > avail * 0.5) cut = cut.slice(0, sp);
+  return cut.trim() + BRAND_SUFFIX;
 }
 
 function extractText(html, re) {
@@ -86,19 +91,27 @@ function setHreflang(html, can) {
 
 function productTitle(html, filePath) {
   const base = path.basename(filePath, '.html');
+  const PHONE_RE = /0086|18151132311/i;
   let name =
+    extractText(html, /class="des_box"[^>]*>[\s\S]*?<h4[^>]*>([\s\S]*?)<\/h4>/i) ||
     extractText(html, /class="bt"[^>]*>[\s\S]*?<a[^>]*title=["']([^"']+)["']/i) ||
-    extractText(html, /class="[^"]*bt[^"]*"[^>]*>[\s\S]*?<a[^>]*title=["']([^"']+)["']/i) ||
-    extractText(html, /<h2[^>]*>([\s\S]*?)<\/h2>/i) ||
-    extractText(html, /class="headline"[^>]*>([\s\S]*?)<\//i) ||
-    extractText(html, /class="title_bt"[^>]*>[\s\S]*?<h1>([\s\S]*?)<\/h1>/i);
-  name = name.replace(/\s*-\s*KIWL.*$/i, '').replace(/Medium Beverage Machineryry/gi, cfg.BRAND_NAME).trim();
-  if (!name || name.length < 4) name = 'Beverage Filling Machine';
-  if (name.length < 50 && base.match(/^\d+$/)) {
-    const short = name.length > 38 ? name.slice(0, 38) + '…' : name;
-    return buildTitle(`${short} #${base}`);
+    extractText(html, /class="headline"[^>]*>([\s\S]*?)<\//i);
+  if (!name || PHONE_RE.test(name)) {
+    const h2all = [...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)];
+    for (const m of h2all) {
+      const t = m[1].replace(/<[^>]+>/g, '').trim();
+      if (t && !PHONE_RE.test(t) && t.length > 4) {
+        name = t;
+        break;
+      }
+    }
   }
-  return buildTitle(`${name} - Beverage Filling Machine`);
+  name = (name || 'Beverage Filling Machine')
+    .replace(/\s*-\s*KIWL.*$/i, '')
+    .replace(PHONE_RE, '')
+    .replace(/Medium Beverage Machineryry/gi, cfg.BRAND_NAME)
+    .trim();
+  return buildTitle(name);
 }
 
 function fixBannerAlts(html) {

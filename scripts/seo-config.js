@@ -253,6 +253,51 @@ module.exports = {
       arTitle: 'آلة تعبئة مياه البراميل',
       arAlt: 'خط تعبئة مياه البراميل'
     },
+    shuiguanzhuangji: {
+      name: 'PET Water Filling Machine',
+      enTitle: 'PET Water Filling Machine - Water Bottling Line',
+      enDesc: 'PET water filling machines and monoblock bottling lines for export water plants.',
+      enKw: 'PET water filling machine, water bottling line, beverage filling machine',
+      enAlt: 'PET water filling machine bottling line',
+      arTitle: 'آلة تعبئة مياه PET',
+      arAlt: 'خط تعبئة مياه PET'
+    },
+    pijiuguanzhuangji: {
+      name: 'Beer Filling Machine',
+      enTitle: 'Beer Filling Machine - Beer Bottling Line',
+      enDesc: 'Beer filling machines and glass beer bottling lines for breweries worldwide.',
+      enKw: 'beer filling machine, beer bottling line, beverage filling machine',
+      enAlt: 'beer filling machine bottling line',
+      arTitle: 'آلة تعبئة البيرة',
+      arAlt: 'خط تعبئة البيرة'
+    },
+    guanzhuangjipeijian: {
+      name: 'Filling Machine Spare Parts',
+      enTitle: 'Filling Machine Spare Parts - Bottling Components',
+      enDesc: 'Spare parts and components for beverage filling machines and bottling lines.',
+      enKw: 'filling machine spare parts, bottling components, beverage filling machine',
+      enAlt: 'filling machine spare parts for beverage lines',
+      arTitle: 'قطع غيار آلات التعبئة',
+      arAlt: 'قطع غيار خطوط تعبئة المشروبات'
+    },
+    cuogaiji: {
+      name: 'Bottle Cap Twisting Machine',
+      enTitle: 'Bottle Cap Twisting Machine - ROPP Capper',
+      enDesc: 'Bottle cap twisting and ROPP capping machines for beverage bottling lines.',
+      enKw: 'bottle cap twisting machine, ROPP capper, beverage packaging machinery',
+      enAlt: 'bottle cap twisting machine for beverage lines',
+      arTitle: 'آلة لولب أغطية الزجاجات',
+      arAlt: 'آلة إغلاق أغطية الزجاجات'
+    },
+    fegnmiguanzhuangji: {
+      name: 'Honey Filling Machine',
+      enTitle: 'Honey Filling Machine - Viscous Food Filler',
+      enDesc: 'Honey and viscous food filling machines for syrup and thick liquid bottling.',
+      enKw: 'honey filling machine, viscous food filler, liquid filling machine',
+      enAlt: 'honey filling machine for food bottling',
+      arTitle: 'آلة تعبئة العسل',
+      arAlt: 'آلة تعبئة الأطعمة اللزجة'
+    },
     youguanzhuangji: {
       name: 'Oil Filling Machine',
       enTitle: 'Oil Filling Machine - Liquid Filling Equipment',

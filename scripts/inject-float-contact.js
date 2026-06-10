@@ -1,12 +1,12 @@
 /**
- * Inject kiwl-float-contact snippet before </body> on all HTML pages.
+ * Inject kiwl-chat-widget snippet before </body> on all HTML pages.
  */
 const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
-const snippetPath = path.join(root, 'statics', 'snippets', 'kiwl-float-contact.html');
-const MARKER = 'kiwl-float-contact';
+const snippetPath = path.join(root, 'statics', 'snippets', 'kiwl-chat-widget.html');
+const MARKER = 'kiwl-chat-widget';
 const snippet = fs.readFileSync(snippetPath, 'utf8').trim();
 
 function walk(dir, list) {

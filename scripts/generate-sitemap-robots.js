@@ -8,15 +8,33 @@ const cfg = require('./seo-config');
 const root = path.join(__dirname, '..');
 const SITE = cfg.SITE.replace(/\/$/, '');
 
+const SKIP_DIRS = new Set(['node_modules', '.git', 'scripts', 'docs', 'uploadfile', 'statics', 'html']);
+
+function shouldInclude(filePath) {
+  const rel = path.relative(root, filePath).replace(/\\/g, '/');
+  if (rel.startsWith('html/')) return false;
+  if (rel.startsWith('statics/')) return false;
+  if (rel.startsWith('uploadfile/')) return false;
+  if (/^product\/\d+\.html$/i.test(rel)) return false;
+  if (/^(news|kehuanli|jishuzhichi)\/\d+\.html$/i.test(rel)) return false;
+  if (/^(news|kehuanli|jishuzhichi)\/[^/]+\/\d+\.html$/i.test(rel)) return false;
+  if (/^product\/(?:tuijianchanpin\/)?[^/]+\/\d+\.html$/i.test(rel)) return false;
+  if (/^product\/tuijianchanpin\/\d+\.html$/i.test(rel)) return false;
+  if (rel === 'sitemap.html') return false;
+  const html = fs.readFileSync(filePath, 'utf8');
+  if (/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) return false;
+  return true;
+}
+
 function walkHtml(dir, list = []) {
   for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, ent.name);
     if (ent.isDirectory()) {
-      if (['node_modules', '.git', 'scripts', 'docs', 'uploadfile'].includes(ent.name)) continue;
+      if (SKIP_DIRS.has(ent.name)) continue;
       if (ent.name.endsWith('.bak') || ent.name.includes('backup')) continue;
       walkHtml(p, list);
     } else if (ent.name.endsWith('.html') && !ent.name.endsWith('.bak.html')) {
-      list.push(p);
+      if (shouldInclude(p)) list.push(p);
     }
   }
   return list;
@@ -76,10 +94,17 @@ Allow: /
 
 Disallow: /scripts/
 Disallow: /docs/
+Disallow: /html/
+Disallow: /uploadfile/
+Disallow: /statics/
 Disallow: /*.bak
 Disallow: /*.bak.html
 Disallow: /uploadfile/temp/
 Disallow: /test/
+Disallow: /product/[0-9]*.html
+Disallow: /news/[0-9]*.html
+Disallow: /kehuanli/[0-9]*.html
+Disallow: /jishuzhichi/[0-9]*.html
 
 Sitemap: ${SITE}/sitemap.xml
 `;
