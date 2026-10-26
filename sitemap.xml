@@ -829,4 +829,10 @@
     <priority>0.6</priority>
   </url>
 <url><loc>https://mediumbeveragemachinery.com/sitemap.html</loc></url>
+  <url>
+    <loc>https://mediumbeveragemachinery.com/2026/hynews_1026/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
